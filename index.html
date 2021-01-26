@@ -3,6 +3,7 @@
     <style>
         html{  background: url(Pic/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
         background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: 100%;
         font-family: Cursive;
         opacity: 0.90;
@@ -18,10 +19,7 @@
             font-size: 50px;
             margin-left: 30%;
         }
-        h2{
-            color: rgb(0, 0, 0) ;
-            opacity: 0.99;
-        }
+
         div.transbox {
             margin: 30px;
             background-color: #ffffff;
@@ -36,7 +34,13 @@
             font-size: 30px;
             color: #000000;
         }
-        label
+        footer{
+            color: rgb(0, 0, 0) ;
+            font-size: 20px;
+            margin-left: 30%;  
+
+        }
+        
     </style>
 
     <head>
@@ -51,16 +55,34 @@
             <div class="transbox">
                 <h2>CHOOSE WHAT YOU WANT TO EAT </h2>
                 <input type="checkbox"  name="BURGER1" value="BURGER ">
-                <label for="vehicle1"> BURGER </label><br>
-                <input type="checkbox" name="vehicle2" value="Car">
-                <label for="vehicle2"> PIZZA </label><br>
-                <input type="checkbox"  name="vehicle3" value="Boat">
-                <label for="vehicle3"> PASTA </label><br><br>
-                <input type="submit" value="ADD TO CART" style="background-color: rgb(14, 109, 109); margin-left: 50%; width: 150px; height:80px ;">
-
-
+                <label for="BURGER1"> BURGER </label><br>
+                <input type="checkbox" name="PIZZA" value="PIZZA">
+                <label for="PIZZA"> PIZZA </label><br>
+                <input type="checkbox"  name="PASTA" value="PASTA">
+                <label for="PASTA"> PASTA </label><br><br>
+                <input type="submit" value="ADD TO CART" style="background-color: rgb(14, 109, 109); margin-left:40%; width: 250px; height:80px ;">
             </div>
               
         </main>
+    
+    <footer>
+        
+        <h3>PARTNERS</h3>      
+        <p>  
+            <span><a href="https://khasawneh07.github.io/GTR-Shop" style="color:rgb(0, 0, 0); ">(👉🏻Mohammad Kasawneh👈🏻)</a> </span> <br>  
+            <span><a href="https://github.com/emansawalha/My-first-website" style="color:rgb(0, 0, 0); ">(👉🏻Eman Sawalha👈🏻)   </a> </span>    
+        </p>
+        
+
+
+        
+        <h3>Opening times  -  Contact us  </h3>    
+        <p>
+            <span>(Sunday—Thursday: 08:00 — 22:00)</span> 
+            <span>(Friday—Saturday: 09:00 — 23:00) </span><br>
+            <span>(Phone Number : 0777777777) </span>
+        </p>
+    </footer>
+    
     </body>
 </html>
