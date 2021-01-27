@@ -6,27 +6,38 @@
         background-attachment: fixed;
         background-size: 100%;
         font-family: Cursive;
-        opacity: 0.90;
+        opacity: 0.80;
         } 
 
-        header{
+        .header {
+          position: fixed;
+          top: 0;
+          z-index: 1;
+          width: 100%;
+          background-color: #f1f1f1;
+        }
+
+        .header h2 {
+          text-align: center;
+        }
+        /* header{
             color: white ;
             font-size: 50px;
             margin-left: 30%;
-        }
+        } */
 
         div.transbox {
             margin: 30px;
             background-color: #ffffff;
             border: 1px solid black;
-            opacity: 0.8;
+            opacity: 0.9;
             }
 
         div.transbox h2,label, input{
             opacity: 1.0;
             margin: 5%;
             font-weight: bold;
-            font-size: 30px;
+            font-size: 25px;
             color: #000000;
         }
         footer{
@@ -37,58 +48,98 @@
         span a{
             size: 50px;
         }
-        
+            
+        .progress-container {
+          width: 100%;
+          height: 8px;
+          background: #ccc;
+        }
+
+        .progress-bar {
+          height: 8px;
+          background:rgb(165, 6, 67);
+          width: 0%;
+        }
+        button{
+            font-weight: bold;
+        }
     </style>
 
     <head>
-        <img src="Pic/pngegg (3).png" alt="img1" width="300" height="300" style="margin-left: 40%;">
         <title>Online Restaurant</title>
     </head>
 
 
     <body>
-        <header>Welcom To My Online Restaurant</header>
+        <div class="header">
+            <span><img src="Pic/pngegg (3).png" alt="img1" width="100" height="100" style="margin-left: 45%; "></span>
+            <span><h1 style="text-align: center;">WELCOME TO MOMANI RESTAURANT</h1></span>
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>  
+        </div>
+        <header>                                                                                                                                                                                                                <br><br><br><br><br><br><br><br><br>
+            <div class="transbox"> 
+                <h2 style="text-align: center;">OUR VISION:- <br>
+                From extraordinary events to those everyday moments with friends and family, our guests Celebrate Life in Restaurants.
+                    Our team Celebrates Life in Restaurants. It's our vision to support our team members' journeys and join them in their celebration of life.
+                </h2>
+            </div>                                                                                                                                                                                          <br><br>           
+            <div class="transbox"> 
+                <h2 style="text-align: center;">Our Mission:-                                                                                                                                                                           <br>
+                    Quality. Passion. Pride.                                                                                                                                                                                                                <br><br>
+                    Quality means freshness. It's fresh 100% Choice or Prime ground beef formed into perfectly grilled, Handcrafted Burgers that redefine an. Quality is seasonal vine-ripened tomatoes and crisp leaf lettuce still glistening with garden dew. It's premium cheeses and an uncompromising commitment to providing you the best.<br><br>
+                    Passion is people. People who love what they do and take your enjoyment personally. Passion is what to expect from the people who take your order, the people who craft your meal (and peek out from the kitchen to see your delight) and the people who are designing our comfortable, stylish restaurants that are destinations in themselves. Everyone you meet here is happy you've come, and they're genuinely dedicated to having you visit with us frequently. <br><br>Pride makes us a family. This is our home. You are our guest. And we will attend to your dining experience with a degree of care and attention to detail unrivaled anywhere. A deep desire to serve others is the secret weapon of a gracious host. And it's why, at Momani restaurant, we want you to always leave with a smile.                
+                </div>
+        </header>                                                                                                                                                                                                        <br><br><br>
         <main>
             <div class="transbox">
-                <h2>CHOOSE WHAT YOU WANT TO EAT 👌🏻</h2>
-                <input type="checkbox"  name="BURGER1" value="BURGER ">
-                <label for="BURGER1"> BURGER </label><br>
-                <input type="checkbox" name="PIZZA" value="PIZZA">
-                <label for="PIZZA"> PIZZA </label><br>
-                <input type="checkbox"  name="PASTA" value="PASTA">
-                <label for="PASTA"> PASTA </label><br><br>
-                <input type="submit" value="ADD TO CART" style="background-color: rgb(14, 109, 109); margin-left:40%; width: 250px; height:80px ;">
-            </div>
-              
+                <h2 style="text-align: center;font-size: 40px">CHOOSE WHAT YOU LIKE TO EAT 👌🏻</h2>
+                <span> <button onclick="ADDToBill()" style="background-color: rgb(165, 6, 67); width: 25%; height:80px ;font-size: 25px; margin-left:5%;  ">Add BURGER TO Cart</button></span>
+                <span><button onclick="ADDToBill()"  style="background-color: rgb(165, 6, 67);  width: 25%; height:80px ;font-size:25px; margin-left:5%;">Add PIZZA TO Cart</button></span>
+                <span><button onclick="ADDToBill()"  style="background-color: rgb(165, 6, 67);  width: 25%; height:80px ;font-size:25px; margin-left:5%;">Add PASTA TO Cart</button></span> <br><br><br><br>
+                <button onclick="PrintBill()" style="background-color: rgb(14, 109, 109); width: 85%; height:80px ; font-size: 40px; margin: 5%;">Calculate Bill</button>
+            <div id="BillDiv" style="text-align: center;"><h1> Your bill </h1></div>
+            </div> 
         </main>
     
-    <footer>
-        <div class="transbox">
-            
-            <h3>PARTNERS</h3>      
-            <p>  
-                
-                <span><h3>(👆🏻 Mohammad  AL - Momani 👆🏻)</h3> </span>    
-                <span><a href="https://khasawneh07.github.io/GTR-Shop" style="color:rgb(0, 0, 0); "><h4> ( 👉🏻Mohammad Kasawneh👈🏻 )</h4> </a> </span> 
-                <span><a href="https://emansawalha.github.io/My-first-website" style="color:rgb(0, 0, 0); "> <h5> (  👉🏻Eman Sawalha👈🏻  ) </h5>  </a> </span> <br>     
-                <!-- <span style="opacity: 1.0;"><img src="https://ca.slack-edge.com/TNGRRLUMA-U01KECL69R8-25154ff58f54-512" alt="img1" width="280" height="280"></span> 
-                <span><img src="https://ca.slack-edge.com/TNGRRLUMA-U01L47ZALFJ-a0dbf74e4286-512" alt="img1" width="280" height="280"></span>
-                <span><img src="https://ca.slack-edge.com/TNGRRLUMA-U01K7K59WKG-b306414e1c15-512" alt="img1" width="280" height="280"></span><br>  -->
+        <footer>
+            <div class="transbox" style="text-align: center;">   
+                <h3>Done by (👆🏻 Mohammad  AL - Momani 👆🏻) </h3>      
+                <!-- <p>  
+                    <span><h3></h3> </span>    
+                    <span><a href="https://khasawneh07.github.io/GTR-Shop" style="color:rgb(0, 0, 0); "><h4> ( 👉🏻Mohammad Kasawneh👈🏻 )</h4> </a> </span> 
+                    <span><a href="https://emansawalha.github.io/My-first-website" style="color:rgb(0, 0, 0); "> <h5> (  👉🏻Eman Sawalha👈🏻  ) </h5>  </a> </span> <br>     
+                    <span style="opacity: 1.0;"><img src="https://ca.slack-edge.com/TNGRRLUMA-U01KECL69R8-25154ff58f54-512" alt="img1" width="280" height="280"></span> 
+                    <span><img src="https://ca.slack-edge.com/TNGRRLUMA-U01L47ZALFJ-a0dbf74e4286-512" alt="img1" width="280" height="280"></span>
+                    <span><img src="https://ca.slack-edge.com/TNGRRLUMA-U01K7K59WKG-b306414e1c15-512" alt="img1" width="280" height="280"></span><br> 
+                </p> -->
+                <h3>Opening times  -  Contact us  </h3>    
+                <p>
+                    <span>(Sunday—Thursday: 08:00 — 22:00)</span> 
+                    <span>(Friday—Saturday: 09:00 — 23:00) </span><br>
+                    <span>(Phone Number : 0777777777) </span>
+                </p>
+            </div>
+        </footer>
 
-            </p>
-            
-        
-        
-            
-            <h3>Opening times  -  Contact us  </h3>    
-            <p>
-                <span>(Sunday—Thursday: 08:00 — 22:00)</span> 
-                <span>(Friday—Saturday: 09:00 — 23:00) </span><br>
-                <span>(Phone Number : 0777777777) </span>
-            </p>
-        </div>
-
-    </footer>
-    
+        <script>
+            var bill =0;
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function() {myFunction()};
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+            function ADDToBill (){
+                bill+=10;
+            }
+            function PrintBill (){
+                var x = document.getElementById("BillDiv");
+                   x.innerHTML = "<h2>"+"your Bill = " +bill +"</h2>" ;
+            }
+        </script>
     </body>
 </html>
