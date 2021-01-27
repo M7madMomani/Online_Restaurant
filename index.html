@@ -6,7 +6,7 @@
         background-attachment: fixed;
         background-size: 100%;
         font-family: Cursive;
-        opacity: 0.80;
+        opacity: 0.92;
         } 
 
         .header {
@@ -30,11 +30,9 @@
             margin: 30px;
             background-color: #ffffff;
             border: 1px solid black;
-            opacity: 0.9;
             }
 
         div.transbox h2,label, input{
-            opacity: 1.0;
             margin: 5%;
             font-weight: bold;
             font-size: 25px;
@@ -95,9 +93,9 @@
         <main>
             <div class="transbox">
                 <h2 style="text-align: center;font-size: 40px">CHOOSE WHAT YOU LIKE TO EAT 👌🏻</h2>
-                <span> <button onclick="ADDToBill()" style="background-color: rgb(165, 6, 67); width: 25%; height:80px ;font-size: 25px; margin-left:5%;  ">Add BURGER TO Cart</button></span>
-                <span><button onclick="ADDToBill()"  style="background-color: rgb(165, 6, 67);  width: 25%; height:80px ;font-size:25px; margin-left:5%;">Add PIZZA TO Cart</button></span>
-                <span><button onclick="ADDToBill()"  style="background-color: rgb(165, 6, 67);  width: 25%; height:80px ;font-size:25px; margin-left:5%;">Add PASTA TO Cart</button></span> <br><br><br><br>
+                <span> <button onclick="ADDToBill()" style="background-color: rgb(165, 6, 67); width: 25%; height:80px ;font-size: 25px; margin-left:5%;  ">Add BURGER FOR 10$ </button></span>
+                <span><button onclick="ADDToBill()"  style="background-color: rgb(165, 6, 67);  width: 25%; height:80px ;font-size:25px; margin-left:5%;">Add PIZZA FOR 10$</button></span>
+                <span><button onclick="ADDToBill()"  style="background-color: rgb(165, 6, 67);  width: 25%; height:80px ;font-size:25px; margin-left:5%;">Add PASTA FOR 10$</button></span> <br><br><br><br>
                 <button onclick="PrintBill()" style="background-color: rgb(14, 109, 109); width: 85%; height:80px ; font-size: 40px; margin: 5%;">Calculate Bill</button>
             <div id="BillDiv" style="text-align: center;"><h1> Your bill </h1></div>
             </div> 
@@ -138,7 +136,7 @@
             }
             function PrintBill (){
                 var x = document.getElementById("BillDiv");
-                   x.innerHTML = "<h2>"+"your Bill = " +bill +"</h2>" ;
+                   x.innerHTML = "<h1>"+"Your Bill = " +bill +"$" +"</h1>" ;
             }
         </script>
     </body>
