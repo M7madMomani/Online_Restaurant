@@ -43,9 +43,6 @@
             font-size: 20px;
 
         }
-        span a{
-            size: 50px;
-        }
             
         .progress-container {
           width: 100%;
@@ -61,6 +58,13 @@
         button{
             font-weight: bold;
         }
+        #burger {
+            display: none;
+            }
+        #PIZZA{
+            display: none;
+
+        }
     </style>
 
     <head>
@@ -72,10 +76,14 @@
         <div class="header">
             <span><img src="Pic/pngegg (3).png" alt="img1" width="100" height="100" style="margin-left: 45%; "></span>
             <span><h1 style="text-align: center;">WELCOME TO My RESTAURANT</h1></span>
+            
             <div class="progress-container">
-              <div class="progress-bar" id="myBar"></div>
-            </div>  
-        </div>
+              <div class="progress-bar" id="myBar">
+              </div>        
+            </div> 
+        
+    
+    </div>
         <header>                                                                                                                                                                                                                <br><br><br><br><br><br><br><br><br>
             <div class="transbox"> 
                 <h2 style="text-align: center;">OUR VISION:- <br>
@@ -91,27 +99,50 @@
                 </div>
         </header>                                                                                                                                                                                                        <br><br><br>
         <main>
+
+            <div class="transbox" id="meal">
+                <div id="burger" >   
+                    <div class="mySlides fade">
+                        <img src="https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg" style="width:100% ; height: 100%;">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/34/2019/08/burger-amirali-mirhashemian-SvdDhNkzPUo-unsplash-min.jpg" style="width:100% ; height: 100%;">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://www.canvasfactory.com/blog/wp-content/uploads/amirali-mirhashemian-88YAXjnpvrM-unsplash.jpg" style="width:100%">
+                    </div>
+                </div>
+                <div id="PIZZA" >   
+                    <div class="mySlides fade">
+                        <img src="https://previews.123rf.com/images/golubovystock/golubovystock1712/golubovystock171200113/91122378-food-photography-art-pizza-recipe-restaurant-menu-concept.jpg" style="width:100% ; height: 100%;">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://images.squarespace-cdn.com/content/v1/57dd4abff7e0ab74192f4799/1474137668700-5IUCEDWICAX2NW4QV4AT/ke17ZwdGBToddI8pDm48kFWxnDtCdRm2WA9rXcwtIYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcTSrQkGwCGRqSxozz07hWZrYGYYH8sg4qn8Lpf9k1pYMHPsat2_S1jaQY3SwdyaXg/15690+Homemade_pizza.jpg?format=2500w" style="width:100% ; height: 100%;">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://www.dailynews.com/wp-content/uploads/2019/04/LDN-L-DINE-PIZZA-0412-1-1.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div> 
+
+
             <div class="transbox">
                 <h2 style="text-align: center;font-size: 40px">CHOOSE WHAT YOU LIKE TO EAT 👌🏻</h2>
                 <span> <button onclick="ADDToBill()" style="background-color: rgb(14, 109, 109); width: 25%; height:80px ;font-size: 25px; margin-left:5%;  ">Add BURGER FOR 10$ </button></span>
                 <span><button onclick="ADDToBill()"  style="background-color: rgb(14, 109, 109);  width: 25%; height:80px ;font-size:25px; margin-left:5%;">Add PIZZA FOR 10$</button></span>
                 <span><button onclick="ADDToBill()"  style="background-color: rgb(14, 109, 109);  width: 25%; height:80px ;font-size:25px; margin-left:5%;">Add PASTA FOR 10$</button></span> <br><br><br><br>
                 <button onclick="PrintBill()" style="background-color: rgb(165, 6, 67); width: 85%; height:80px ; font-size: 40px; margin: 5%;">Calculate Bill</button>
-            <div id="BillDiv" style="text-align: center;"><h1> Your bill </h1></div>
+            <div id="BillDiv" style="text-align: center;"><h1> -------------- </h1></div>
             </div> 
         </main>
     
         <footer>
             <div class="transbox" style="text-align: center;">   
                 <h3>Done by (👆🏻 Mohammad  AL - Momani 👆🏻) </h3>      
-                <!-- <p>  
-                    <span><h3></h3> </span>    
-                    <span><a href="https://khasawneh07.github.io/GTR-Shop" style="color:rgb(0, 0, 0); "><h4> ( 👉🏻Mohammad Kasawneh👈🏻 )</h4> </a> </span> 
-                    <span><a href="https://emansawalha.github.io/My-first-website" style="color:rgb(0, 0, 0); "> <h5> (  👉🏻Eman Sawalha👈🏻  ) </h5>  </a> </span> <br>     
-                    <span style="opacity: 1.0;"><img src="https://ca.slack-edge.com/TNGRRLUMA-U01KECL69R8-25154ff58f54-512" alt="img1" width="280" height="280"></span> 
-                    <span><img src="https://ca.slack-edge.com/TNGRRLUMA-U01L47ZALFJ-a0dbf74e4286-512" alt="img1" width="280" height="280"></span>
-                    <span><img src="https://ca.slack-edge.com/TNGRRLUMA-U01K7K59WKG-b306414e1c15-512" alt="img1" width="280" height="280"></span><br> 
-                </p> -->
                 <h3>Opening times  -  Contact us  </h3>    
                 <p>
                     <span>(Sunday—Thursday: 08:00 — 22:00)</span> 
@@ -120,6 +151,6 @@
                 </p>
             </div>
         </footer>
-    <script src="app.js"></script>
+      <script src="app.js"></script>
     </body>
-</html>
+ </html>
