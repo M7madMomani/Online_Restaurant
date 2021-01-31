@@ -52,8 +52,6 @@ while(!(Order=="BURGER"|| Order=="PIZZA")){
 
 
 // When the user scrolls the page, execute myFunction 
-
-window.onscroll = function() {myFunction()};
 function myFunction() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -61,18 +59,21 @@ function myFunction() {
     document.getElementById("myBar").style.width = scrolled + "%";
 }
 
+
 //  ADD To Bill
 function ADDToBill (){
     bill+=10;
 }
+
+
 function PrintBill (){
     var x = document.getElementById("BillDiv");
     
        x.innerHTML = "<h1>"+"Have A Nice Day "+Name1+ "<br> Your Bill = " +bill +"$" +"</h1>" ;
 }
 
+
 // this is for image slide show 
-showSlides();
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -86,4 +87,6 @@ function showSlides() {
 }
 
 
+window.onscroll = function() {myFunction()};
+showSlides();
 document.write(image)

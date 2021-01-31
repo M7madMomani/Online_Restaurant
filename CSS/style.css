@@ -1,0 +1,65 @@
+html{  background: url("https://images.squarespace-cdn.com/content/v1/5de4f8b38ec727201d5b7e42/1575547956189-3PK63ZAGMRY15IAT9DOL/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg?format=2500w");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: Cursive;
+    opacity: 0.92;
+    } 
+
+    .header {
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      text-align: center;
+      width: 100%;
+      background-color: #f1f1f1;
+    }
+
+    .header h2 {
+      text-align: center;
+    }
+    /* header{
+        color: white ;
+        font-size: 50px;
+        margin-left: 30%;
+    } */
+
+    div.transbox {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        }
+
+    div.transbox h2,label, input{
+        margin: 5%;
+        font-weight: bold;
+        font-size: 25px;
+        color: #000000;
+    }
+    footer{
+        color: rgb(0, 0, 0) ;
+        font-size: 20px;
+
+    }
+        
+    .progress-container {
+      width: 100%;
+      height: 10px;
+      background: #ccc;
+    }
+
+    .progress-bar {
+      height: 10px;
+      background:rgb(165, 6, 67);
+      width: 0%;
+    }
+    button{
+        font-weight: bold;
+    }
+    #burger {
+        display: none;
+        }
+    #PIZZA{
+        display: none;
+
+    }
